@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Chat Card</title>
+</head>
+<body>
+    <div class="chat">
+        <div class="chat-header">
+            <span>Daniell Wendyson</span>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle stroke="white" cx="5" cy="12" r="1"></circle>
+                <circle stroke="white" cx="12" cy="12" r="1"></circle>
+                <circle stroke="white" cx="19" cy="12" r="1"></circle>
+                </svg>                
+            </a>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message-item">Salve!</div>
+            <div class="chat-message-item out">Oi :)</div>
+            <div class="chat-message-item">Tudo bem?</div>
+            <div class="chat-message-item out">Tudo sim, e com você?</div>
+            <div class="chat-message-item">Ótimo!</div>
+            <div class="chat-message-item out">Quer sair na sexta?</div>
+            <div class="chat-message-item">Claro!</div>
+            <div class="chat-message-item">Até sexta! :)</div>
+            <div class="chat-message-item out">Até!</div>
+        </div>
+        <div class="chat-footer">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-smile" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle stroke="white" cx="12" cy="12" r="9"></circle>
+                    <line stroke="white" x1="9" y1="10" x2="9.01" y2="10"></line>
+                    <line stroke="white" x1="15" y1="10" x2="15.01" y2="10"></line>
+                    <path stroke="white" d="M9.5 15a3.5 3.5 0 0 0 5 0"></path>
+                 </svg>
+            </a>
+            <input type="text" placeholder="Escreva sua mensagem">
+        </div>
+    </div>
+
+    <script>
+        const chatBody = document.querySelector('.chat . chat-body');
+        chatBody.scrollTo({
+            top: chatBody.scrollHeight
+        })
+    </script>
+</body>
+</html>
